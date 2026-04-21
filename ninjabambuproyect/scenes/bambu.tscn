@@ -1,0 +1,85 @@
+[gd_scene load_steps=2 format=3 uid="uid://plmy8xuu4qge"]
+
+[ext_resource type="Texture2D" uid="uid://diddyo3jihvg8" path="res://assets/bamboo solo sin hoja.PNG" id="1_ogmfk"]
+
+[node name="bambu" type="Node2D"]
+
+[node name="bambu_left" type="StaticBody2D" parent="."]
+position = Vector2(320, 360)
+
+[node name="Sprite2D" type="Sprite2D" parent="bambu_left"]
+modulate = Color(0, 1, 0, 1)
+position = Vector2(8, 90.2912)
+scale = Vector2(0.381736, 0.586699)
+texture = ExtResource("1_ogmfk")
+
+[node name="bambu_left_center" type="Area2D" parent="."]
+position = Vector2(640, 360)
+
+[node name="Sprite2D" type="Sprite2D" parent="bambu_left_center"]
+modulate = Color(0, 1, 0, 1)
+position = Vector2(8.47025, 91.469)
+rotation = 3.14159
+scale = Vector2(0.385719, 0.587567)
+texture = ExtResource("1_ogmfk")
+flip_h = true
+
+[node name="bambu_right_center" type="Area2D" parent="."]
+position = Vector2(960, 360)
+
+[node name="Sprite2D" type="Sprite2D" parent="bambu_right_center"]
+modulate = Color(0, 1, 0, 1)
+position = Vector2(8.02751, 90.5212)
+scale = Vector2(0.383069, 0.586943)
+texture = ExtResource("1_ogmfk")
+
+[node name="bambu_right" type="Area2D" parent="."]
+position = Vector2(1280, 360)
+
+[node name="Sprite2D" type="Sprite2D" parent="bambu_right"]
+modulate = Color(0, 1, 0, 1)
+position = Vector2(7.86521, 91.2337)
+rotation = 3.14159
+scale = Vector2(0.382096, 0.587871)
+texture = ExtResource("1_ogmfk")
+flip_h = true
+
+[node name="bambu_left2" type="Area2D" parent="."]
+position = Vector2(320, -360)
+
+[node name="Sprite2D2" type="Sprite2D" parent="bambu_left2"]
+modulate = Color(0, 1, 0, 1)
+position = Vector2(8.00003, 0)
+scale = Vector2(0.383233, 0.469055)
+texture = ExtResource("1_ogmfk")
+
+[node name="bambu_left_center2" type="Area2D" parent="."]
+position = Vector2(640, -360)
+
+[node name="Sprite2D" type="Sprite2D" parent="bambu_left_center2"]
+modulate = Color(0, 1, 0, 1)
+position = Vector2(8.46912, 2.45398)
+rotation = 3.14159
+scale = Vector2(0.385713, 0.466637)
+texture = ExtResource("1_ogmfk")
+flip_h = true
+
+[node name="bambu_right_center2" type="Area2D" parent="."]
+position = Vector2(960, -360)
+
+[node name="Sprite2D" type="Sprite2D" parent="bambu_right_center2"]
+modulate = Color(0, 1, 0, 1)
+position = Vector2(8.02751, 0)
+scale = Vector2(0.383069, 0.469)
+texture = ExtResource("1_ogmfk")
+
+[node name="bambu_right2" type="Area2D" parent="."]
+position = Vector2(1280, -360)
+
+[node name="Sprite2D" type="Sprite2D" parent="bambu_right2"]
+modulate = Color(0, 1, 0, 1)
+position = Vector2(7.8641, -1.99369e-05)
+rotation = 3.14159
+scale = Vector2(0.38209, 0.469)
+texture = ExtResource("1_ogmfk")
+flip_h = true

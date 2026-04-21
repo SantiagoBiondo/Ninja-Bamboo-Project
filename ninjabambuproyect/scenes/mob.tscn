@@ -1,0 +1,63 @@
+[gd_scene load_steps=10 format=3 uid="uid://1si1p3w0r8n8"]
+
+[ext_resource type="Script" uid="uid://qh4rd1bo5310" path="res://scripts/Mobs/mob.gd" id="1_dy6sc"]
+[ext_resource type="Texture2D" uid="uid://byonhx26w003h" path="res://assets/FB001.png" id="2_h8ps3"]
+[ext_resource type="Texture2D" uid="uid://b675ixhtly1ma" path="res://assets/FB002.png" id="3_ebxvl"]
+[ext_resource type="Texture2D" uid="uid://cjivx4xjkmmet" path="res://assets/FB003.png" id="4_wpivu"]
+[ext_resource type="Texture2D" uid="uid://bat0ggcf1x7li" path="res://assets/FB004.png" id="5_nao87"]
+[ext_resource type="Texture2D" uid="uid://bdxrw4cbwla6n" path="res://assets/FB005.png" id="6_i71wu"]
+[ext_resource type="AudioStream" uid="uid://b70yigmhm43k8" path="res://assets/Sounds/fire-magic-5-378639.mp3" id="7_ebxvl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nokgg"]
+size = Vector2(20, 30)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m0xve"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_h8ps3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ebxvl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_wpivu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_nao87")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_i71wu")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Mob" type="Area2D"]
+rotation = 1.5707964
+scale = Vector2(3, 2)
+collision_layer = 2
+collision_mask = 5
+script = ExtResource("1_dy6sc")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(1.4305115e-06, -9.536743e-07)
+shape = SubResource("RectangleShape2D_nokgg")
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1.7285347e-06, -0.018434048)
+scale = Vector2(0.31250003, 0.9386521)
+sprite_frames = SubResource("SpriteFrames_m0xve")
+autoplay = "default"
+frame_progress = 0.37060028
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+visible = false
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_ebxvl")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

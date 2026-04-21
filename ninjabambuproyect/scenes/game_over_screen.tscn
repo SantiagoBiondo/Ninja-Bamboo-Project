@@ -1,0 +1,127 @@
+[gd_scene load_steps=4 format=3 uid="uid://blwptp1gkjadq"]
+
+[ext_resource type="Script" uid="uid://bwdsuuw7g8dxm" path="res://scripts/UI/game_over_screen.gd" id="1_iwahs"]
+[ext_resource type="PackedScene" uid="uid://bycwnercnfr0g" path="res://scenes/background.tscn" id="2_61w2s"]
+[ext_resource type="AudioStream" uid="uid://d2n8pf0gwga5k" path="res://assets/Sounds/08. Absolutely Not.mp3" id="3_jw6e5"]
+
+[node name="Game_over_screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_iwahs")
+
+[node name="background" parent="." instance=ExtResource("2_61w2s")]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1600.0
+offset_bottom = 900.0
+color = Color(0, 0, 0, 0.662745)
+
+[node name="Time_done_text" type="Label" parent="."]
+layout_mode = 0
+offset_left = 160.0
+offset_top = 104.0
+offset_right = 587.0
+offset_bottom = 169.0
+theme_override_font_sizes/font_size = 46
+text = "tiempo sobrevivido"
+
+[node name="time_done" type="Label" parent="."]
+layout_mode = 0
+offset_left = 239.99997
+offset_top = 184.00005
+offset_right = 279.99997
+offset_bottom = 207.00005
+rotation = 0.00278325
+scale = Vector2(6.252732, 4.7054744)
+
+[node name="enemies_killed_text" type="Label" parent="."]
+layout_mode = 0
+offset_left = 160.0
+offset_top = 296.0
+offset_right = 633.0
+offset_bottom = 361.0
+theme_override_font_sizes/font_size = 46
+text = "enemigos asesinados"
+
+[node name="enemies_killed" type="Label" parent="."]
+layout_mode = 0
+offset_left = 224.0
+offset_top = 376.0
+offset_right = 264.0
+offset_bottom = 399.0
+scale = Vector2(6.5451202, 4.8551574)
+
+[node name="Highscores" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1072.0
+offset_top = 120.0
+offset_right = 1168.0
+offset_bottom = 220.79999
+scale = Vector2(5, 5)
+theme_override_font_sizes/font_size = 12
+
+[node name="Highscores2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1088.0
+offset_top = 48.000004
+offset_right = 1235.0
+offset_bottom = 71.0
+scale = Vector2(3, 2.5)
+text = "Puntuaciones altas"
+
+[node name="Game_over_text" type="Label" parent="."]
+layout_mode = 0
+offset_left = 684.0
+offset_top = 344.0
+offset_right = 934.0
+offset_bottom = 409.0
+theme_override_font_sizes/font_size = 46
+text = "Game Over"
+
+[node name="Player_name" type="Label" parent="."]
+layout_mode = 0
+offset_left = 600.0
+offset_top = 424.0
+offset_right = 1011.0
+offset_bottom = 489.0
+theme_override_font_sizes/font_size = 46
+text = "Ingresa tu nombre"
+
+[node name="LineEdit" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 672.0
+offset_top = 504.00006
+offset_right = 740.5625
+offset_bottom = 535.00006
+scale = Vector2(4.0642443, 2.4157522)
+
+[node name="Restart" type="Button" parent="."]
+layout_mode = 0
+offset_left = 368.0
+offset_top = 673.0
+offset_right = 633.0
+offset_bottom = 819.0
+theme_override_font_sizes/font_size = 50
+text = "Reintentar"
+
+[node name="Exit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1001.0
+offset_top = 672.0
+offset_right = 1266.0
+offset_bottom = 818.0
+theme_override_font_sizes/font_size = 50
+text = "Salir"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_jw6e5")
+
+[connection signal="focus_entered" from="Highscores" to="." method="_on_highscores_focus_entered"]
+[connection signal="text_submitted" from="LineEdit" to="." method="_on_line_edit_text_submitted"]
+[connection signal="pressed" from="Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]

@@ -1,0 +1,53 @@
+[gd_scene load_steps=3 format=3 uid="uid://chwktpgob7jrl"]
+
+[ext_resource type="Texture2D" uid="uid://c2mlslfmwq5mi" path="res://assets/ilustracion-pixel-art-shuriken-pixelated-shuriken-shuriken-ninja-icono-pixelado-pixel-art_1038602-355.png" id="1_e68eh"]
+[ext_resource type="Script" uid="uid://jsx4d72488y3" path="res://scripts/UI/shuriken_meter.gd" id="1_t8u5g"]
+
+[node name="shuriken_meter" type="ReferenceRect"]
+z_index = 5
+anchors_preset = -1
+anchor_right = 0.102
+anchor_bottom = 0.385
+offset_right = 0.247997
+offset_bottom = -0.200012
+border_color = Color(0, 0.701668, 0.229673, 1)
+script = ExtResource("1_t8u5g")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 5
+position = Vector2(30, 240)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_e68eh")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+z_index = 5
+position = Vector2(30, 139)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_e68eh")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+z_index = 5
+position = Vector2(29, 48)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_e68eh")
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.239216)
+z_index = 4
+position = Vector2(28.7696, 48)
+scale = Vector2(0.100623, 0.1)
+texture = ExtResource("1_e68eh")
+
+[node name="Sprite2D5" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.286275)
+z_index = 4
+position = Vector2(30.1995, 139)
+scale = Vector2(0.0967581, 0.0965505)
+texture = ExtResource("1_e68eh")
+
+[node name="Sprite2D6" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.286275)
+z_index = 4
+position = Vector2(30, 240)
+scale = Vector2(0.0980912, 0.0982601)
+texture = ExtResource("1_e68eh")

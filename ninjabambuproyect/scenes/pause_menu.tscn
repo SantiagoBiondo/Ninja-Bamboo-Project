@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=3 uid="uid://uf5ox844y5v7"]
+
+[ext_resource type="Script" uid="uid://cbbke8n6ykms1" path="res://scripts/UI/pausa.gd" id="1_n87rw"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_n87rw")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+offset_right = 1600.0
+offset_bottom = 904.0
+color = Color(0, 0, 0, 0.2)
+
+[node name="TextEdit" type="Label" parent="."]
+visible = false
+modulate = Color(1, 0, 0, 1)
+offset_left = 562.0
+offset_top = 225.0
+offset_right = 1082.0
+offset_bottom = 466.0
+theme_override_constants/outline_size = 30
+theme_override_font_sizes/font_size = 176
+text = "Pause"
+
+[node name="Quit" type="Button" parent="."]
+visible = false
+offset_left = 724.0
+offset_top = 668.0
+offset_right = 902.0
+offset_bottom = 786.0
+theme_override_font_sizes/font_size = 80
+text = "Salir"
+
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

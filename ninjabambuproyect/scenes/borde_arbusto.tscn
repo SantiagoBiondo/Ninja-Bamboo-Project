@@ -1,0 +1,455 @@
+[gd_scene load_steps=2 format=3 uid="uid://5bwo65l66t3j"]
+
+[ext_resource type="Texture2D" uid="uid://h6f8l6kixvsa" path="res://assets/Sprite-arbusto-bambu.png" id="1_k88b4"]
+
+[node name="Borde_arbusto" type="Node2D"]
+
+[node name="bush_left" type="Node2D" parent="."]
+position = Vector2(0, 180)
+
+[node name="Sprite-arbusto-bambu" type="Sprite2D" parent="bush_left"]
+z_index = 1
+position = Vector2(36, 53)
+rotation = 1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu2" type="Sprite2D" parent="bush_left"]
+z_index = 1
+position = Vector2(37, 275)
+rotation = 1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu3" type="Sprite2D" parent="bush_left"]
+position = Vector2(29, 432)
+rotation = 1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu5" type="Sprite2D" parent="bush_left"]
+position = Vector2(35, 127)
+rotation = 1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu6" type="Sprite2D" parent="bush_left"]
+position = Vector2(37, 196)
+rotation = 1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu7" type="Sprite2D" parent="bush_left"]
+position = Vector2(35, 352)
+rotation = 1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu9" type="Sprite2D" parent="bush_left"]
+z_index = 1
+position = Vector2(34, 636)
+rotation = 1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu12" type="Sprite2D" parent="bush_left"]
+z_index = 1
+position = Vector2(30, 504)
+rotation = 1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu13" type="Sprite2D" parent="bush_left"]
+position = Vector2(31, 579)
+rotation = 1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu24" type="Sprite2D" parent="bush_left"]
+position = Vector2(72, 676)
+rotation = 1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu25" type="Sprite2D" parent="bush_left"]
+position = Vector2(65, 607)
+rotation = 1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu26" type="Sprite2D" parent="bush_left"]
+position = Vector2(61, 538)
+rotation = 1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu27" type="Sprite2D" parent="bush_left"]
+position = Vector2(58, 465)
+rotation = 1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu28" type="Sprite2D" parent="bush_left"]
+position = Vector2(65, 389)
+rotation = 1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu29" type="Sprite2D" parent="bush_left"]
+position = Vector2(61, 299)
+rotation = 1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu30" type="Sprite2D" parent="bush_left"]
+position = Vector2(58, 230)
+rotation = 1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu31" type="Sprite2D" parent="bush_left"]
+position = Vector2(65, 165)
+rotation = 1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu32" type="Sprite2D" parent="bush_left"]
+position = Vector2(72, 96)
+rotation = 1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu33" type="Sprite2D" parent="bush_left"]
+position = Vector2(65, 37)
+rotation = 1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu34" type="Sprite2D" parent="bush_left"]
+position = Vector2(37, 677)
+rotation = 1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="bush_right" type="Node2D" parent="."]
+position = Vector2(30.455, 0)
+
+[node name="Sprite-arbusto-bambu4" type="Sprite2D" parent="bush_right"]
+position = Vector2(1559, 304)
+rotation = -1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu10" type="Sprite2D" parent="bush_right"]
+z_index = 1
+position = Vector2(1564, 548)
+rotation = -1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu11" type="Sprite2D" parent="bush_right"]
+position = Vector2(1561, 431)
+rotation = -1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu14" type="Sprite2D" parent="bush_right"]
+position = Vector2(1564, 499)
+rotation = -1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu15" type="Sprite2D" parent="bush_right"]
+z_index = 1
+position = Vector2(1563, 369)
+rotation = -1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu16" type="Sprite2D" parent="bush_right"]
+position = Vector2(1531, 353)
+rotation = -1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu17" type="Sprite2D" parent="bush_right"]
+position = Vector2(1532, 293)
+rotation = -1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu18" type="Sprite2D" parent="bush_right"]
+position = Vector2(1525, 237)
+rotation = -1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu19" type="Sprite2D" parent="bush_right"]
+z_index = 1
+position = Vector2(1560, 865)
+rotation = -1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu20" type="Sprite2D" parent="bush_right"]
+position = Vector2(1560, 817)
+rotation = -1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu21" type="Sprite2D" parent="bush_right"]
+position = Vector2(1563, 745)
+rotation = -1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu22" type="Sprite2D" parent="bush_right"]
+position = Vector2(1563, 618)
+rotation = -1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu23" type="Sprite2D" parent="bush_right"]
+z_index = 1
+position = Vector2(1565, 685)
+rotation = -1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu35" type="Sprite2D" parent="bush_right"]
+position = Vector2(1528, 808)
+rotation = -1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu36" type="Sprite2D" parent="bush_right"]
+position = Vector2(1530, 740)
+rotation = -1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu37" type="Sprite2D" parent="bush_right"]
+position = Vector2(1532, 675)
+rotation = -1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu38" type="Sprite2D" parent="bush_right"]
+position = Vector2(1532, 618)
+rotation = -1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu39" type="Sprite2D" parent="bush_right"]
+position = Vector2(1524, 558)
+rotation = -1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu40" type="Sprite2D" parent="bush_right"]
+position = Vector2(1529, 491)
+rotation = -1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu41" type="Sprite2D" parent="bush_right"]
+position = Vector2(1522, 421)
+rotation = -1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu42" type="Sprite2D" parent="bush_right"]
+position = Vector2(1528, 871)
+rotation = -1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu8" type="Sprite2D" parent="bush_right"]
+z_index = 1
+position = Vector2(1559, 234)
+rotation = -1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="bush_right2" type="Node2D" parent="."]
+position = Vector2(22.08, -703)
+
+[node name="Sprite-arbusto-bambu4" type="Sprite2D" parent="bush_right2"]
+position = Vector2(1559, 304)
+rotation = -1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu10" type="Sprite2D" parent="bush_right2"]
+z_index = 1
+position = Vector2(1564, 548)
+rotation = -1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu11" type="Sprite2D" parent="bush_right2"]
+position = Vector2(1561, 431)
+rotation = -1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu14" type="Sprite2D" parent="bush_right2"]
+position = Vector2(1564, 499)
+rotation = -1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu15" type="Sprite2D" parent="bush_right2"]
+z_index = 1
+position = Vector2(1563, 369)
+rotation = -1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu16" type="Sprite2D" parent="bush_right2"]
+position = Vector2(1531, 353)
+rotation = -1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu17" type="Sprite2D" parent="bush_right2"]
+position = Vector2(1532, 293)
+rotation = -1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu18" type="Sprite2D" parent="bush_right2"]
+position = Vector2(1525, 237)
+rotation = -1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu19" type="Sprite2D" parent="bush_right2"]
+z_index = 1
+position = Vector2(1560, 865)
+rotation = -1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu20" type="Sprite2D" parent="bush_right2"]
+position = Vector2(1560, 817)
+rotation = -1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu21" type="Sprite2D" parent="bush_right2"]
+position = Vector2(1563, 745)
+rotation = -1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu22" type="Sprite2D" parent="bush_right2"]
+position = Vector2(1563, 618)
+rotation = -1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu23" type="Sprite2D" parent="bush_right2"]
+z_index = 1
+position = Vector2(1565, 685)
+rotation = -1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu35" type="Sprite2D" parent="bush_right2"]
+position = Vector2(1528, 808)
+rotation = -1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu36" type="Sprite2D" parent="bush_right2"]
+position = Vector2(1530, 740)
+rotation = -1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu37" type="Sprite2D" parent="bush_right2"]
+position = Vector2(1532, 675)
+rotation = -1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu38" type="Sprite2D" parent="bush_right2"]
+position = Vector2(1532, 618)
+rotation = -1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu39" type="Sprite2D" parent="bush_right2"]
+position = Vector2(1524, 558)
+rotation = -1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu40" type="Sprite2D" parent="bush_right2"]
+position = Vector2(1529, 491)
+rotation = -1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu41" type="Sprite2D" parent="bush_right2"]
+position = Vector2(1522, 421)
+rotation = -1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu42" type="Sprite2D" parent="bush_right2"]
+position = Vector2(1528, 871)
+rotation = -1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu8" type="Sprite2D" parent="bush_right2"]
+z_index = 1
+position = Vector2(1559, 234)
+rotation = -1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="bush_left2" type="Node2D" parent="."]
+position = Vector2(0.0800018, -523)
+
+[node name="Sprite-arbusto-bambu" type="Sprite2D" parent="bush_left2"]
+z_index = 1
+position = Vector2(36, 53)
+rotation = 1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu2" type="Sprite2D" parent="bush_left2"]
+z_index = 1
+position = Vector2(37, 275)
+rotation = 1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu3" type="Sprite2D" parent="bush_left2"]
+position = Vector2(29, 432)
+rotation = 1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu5" type="Sprite2D" parent="bush_left2"]
+position = Vector2(35, 127)
+rotation = 1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu6" type="Sprite2D" parent="bush_left2"]
+position = Vector2(37, 196)
+rotation = 1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu7" type="Sprite2D" parent="bush_left2"]
+position = Vector2(35, 352)
+rotation = 1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu9" type="Sprite2D" parent="bush_left2"]
+z_index = 1
+position = Vector2(34, 636)
+rotation = 1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu12" type="Sprite2D" parent="bush_left2"]
+z_index = 1
+position = Vector2(30, 504)
+rotation = 1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu13" type="Sprite2D" parent="bush_left2"]
+position = Vector2(31, 579)
+rotation = 1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu24" type="Sprite2D" parent="bush_left2"]
+position = Vector2(72, 676)
+rotation = 1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu25" type="Sprite2D" parent="bush_left2"]
+position = Vector2(65, 607)
+rotation = 1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu26" type="Sprite2D" parent="bush_left2"]
+position = Vector2(61, 538)
+rotation = 1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu27" type="Sprite2D" parent="bush_left2"]
+position = Vector2(58, 465)
+rotation = 1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu28" type="Sprite2D" parent="bush_left2"]
+position = Vector2(65, 389)
+rotation = 1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu29" type="Sprite2D" parent="bush_left2"]
+position = Vector2(61, 299)
+rotation = 1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu30" type="Sprite2D" parent="bush_left2"]
+position = Vector2(58, 230)
+rotation = 1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu31" type="Sprite2D" parent="bush_left2"]
+position = Vector2(65, 165)
+rotation = 1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu32" type="Sprite2D" parent="bush_left2"]
+position = Vector2(72, 96)
+rotation = 1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu33" type="Sprite2D" parent="bush_left2"]
+position = Vector2(65, 37)
+rotation = 1.5708
+texture = ExtResource("1_k88b4")
+
+[node name="Sprite-arbusto-bambu34" type="Sprite2D" parent="bush_left2"]
+position = Vector2(37, 677)
+rotation = 1.5708
+texture = ExtResource("1_k88b4")

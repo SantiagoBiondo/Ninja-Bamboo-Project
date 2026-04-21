@@ -1,0 +1,46 @@
+[gd_scene load_steps=5 format=3 uid="uid://kii81mgl67tl"]
+
+[ext_resource type="Texture2D" uid="uid://b2top2na54o3d" path="res://assets/Colors/fondo.png" id="1_8ithn"]
+[ext_resource type="Texture2D" uid="uid://g4vpsk4ab3as" path="res://assets/Colors/verde.png" id="1_sb4ky"]
+[ext_resource type="Script" uid="uid://rp3al74jq1j5" path="res://scripts/UI/stamina_bar.gd" id="2_er2r8"]
+[ext_resource type="Texture2D" uid="uid://diddyo3jihvg8" path="res://assets/bamboo solo sin hoja.PNG" id="4_ja3cp"]
+
+[node name="TextureProgressBar" type="TextureProgressBar"]
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 231.0
+offset_top = 272.0
+offset_right = 253.0
+offset_bottom = -46.0
+grow_horizontal = 2
+grow_vertical = 2
+value = 50.0
+fill_mode = 3
+nine_patch_stretch = true
+texture_under = ExtResource("1_8ithn")
+texture_progress = ExtResource("1_sb4ky")
+script = ExtResource("2_er2r8")
+
+[node name="BambooSoloSinHoja" type="Sprite2D" parent="."]
+position = Vector2(-1.99995, 288)
+scale = Vector2(0.184506, 0.379153)
+texture = ExtResource("4_ja3cp")
+
+[node name="BambooSoloSinHoja2" type="Sprite2D" parent="."]
+position = Vector2(34, 288)
+scale = Vector2(0.190494, 0.379153)
+texture = ExtResource("4_ja3cp")
+
+[node name="BambooSoloSinHoja3" type="Sprite2D" parent="."]
+position = Vector2(11, -3.00001)
+rotation = 1.5708
+scale = Vector2(0.190494, 0.0318081)
+texture = ExtResource("4_ja3cp")
+
+[node name="BambooSoloSinHoja4" type="Sprite2D" parent="."]
+position = Vector2(10, 589)
+rotation = 1.5708
+scale = Vector2(0.190494, 0.0318081)
+texture = ExtResource("4_ja3cp")

@@ -1,0 +1,173 @@
+[gd_scene load_steps=18 format=3 uid="uid://btpm0fjkwa85"]
+
+[ext_resource type="Script" uid="uid://b5bsdyfvujqc6" path="res://scripts/UI/Tutorial_screen.gd" id="1_6iv2e"]
+[ext_resource type="Texture2D" uid="uid://ddx7cmkwtu4qv" path="res://assets/right arrow.png" id="2_6t5s3"]
+[ext_resource type="PackedScene" uid="uid://bycwnercnfr0g" path="res://scenes/background.tscn" id="2_yop0t"]
+[ext_resource type="Texture2D" uid="uid://bpwieofm5npvj" path="res://assets/left arrow.png" id="3_owd46"]
+[ext_resource type="Texture2D" uid="uid://cuwdud8sgbu50" path="res://assets/up arrow.png" id="4_6t5s3"]
+[ext_resource type="Texture2D" uid="uid://c2mlslfmwq5mi" path="res://assets/ilustracion-pixel-art-shuriken-pixelated-shuriken-shuriken-ninja-icono-pixelado-pixel-art_1038602-355.png" id="5_owd46"]
+[ext_resource type="Texture2D" uid="uid://y467uwxsc0u3" path="res://assets/red arrow.png" id="6_m1hlb"]
+[ext_resource type="Texture2D" uid="uid://bai6q6ik0pfr4" path="res://assets/esqueleto1.png" id="6_n252v"]
+[ext_resource type="Texture2D" uid="uid://drgrtxv6cr0dd" path="res://assets/esqueleto2.png" id="7_3oerv"]
+[ext_resource type="Texture2D" uid="uid://dbo05usw46vk8" path="res://assets/esqueleto3.png" id="8_qjpvs"]
+[ext_resource type="Texture2D" uid="uid://db3xp2k0sv1vm" path="res://assets/esqueleto4.png" id="9_yop0t"]
+[ext_resource type="Texture2D" uid="uid://ddwqb324b8xbd" path="res://assets/esqueleto5.png" id="10_m1hlb"]
+[ext_resource type="Texture2D" uid="uid://bbyg7brxrd45o" path="res://assets/esqueleto6.png" id="11_h6v0s"]
+[ext_resource type="Texture2D" uid="uid://df31draqkygqe" path="res://assets/esqueleto7.png" id="12_1y52w"]
+[ext_resource type="Texture2D" uid="uid://ik1ncve3ddl2" path="res://assets/onigiri.png" id="15_h6v0s"]
+[ext_resource type="PackedScene" uid="uid://kii81mgl67tl" path="res://scenes/staminaBar.tscn" id="16_m1hlb"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_heifu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_n252v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_3oerv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_qjpvs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_yop0t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_m1hlb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_h6v0s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_1y52w")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="Tutorial_screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6iv2e")
+
+[node name="background" parent="." instance=ExtResource("2_yop0t")]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1600.0
+offset_bottom = 900.0
+color = Color(0, 0, 0, 0.662745)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(740, 619)
+scale = Vector2(0.683908, 0.59375)
+texture = ExtResource("2_6t5s3")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(143, 612)
+scale = Vector2(0.661417, 0.594118)
+texture = ExtResource("3_owd46")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(468, 326)
+scale = Vector2(0.767861, 0.59082)
+texture = ExtResource("4_6t5s3")
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+position = Vector2(410, 99)
+rotation = -2.90196
+scale = Vector2(0.956146, 0.458728)
+texture = ExtResource("6_m1hlb")
+
+[node name="Sprite2D5" type="Sprite2D" parent="."]
+position = Vector2(1287, 679)
+rotation = -5.81384
+scale = Vector2(0.956146, 0.458728)
+texture = ExtResource("6_m1hlb")
+
+[node name="Sprite2D6" type="Sprite2D" parent="."]
+position = Vector2(44, 51)
+scale = Vector2(0.102703, 0.0893931)
+texture = ExtResource("5_owd46")
+
+[node name="Sprite2D7" type="Sprite2D" parent="."]
+position = Vector2(45, 141)
+scale = Vector2(0.0932798, 0.0934471)
+texture = ExtResource("5_owd46")
+
+[node name="Sprite2D8" type="Sprite2D" parent="."]
+position = Vector2(46, 242)
+scale = Vector2(0.0973339, 0.0975012)
+texture = ExtResource("5_owd46")
+
+[node name="TextEdit" type="Label" parent="."]
+layout_mode = 0
+offset_left = 76.9998
+offset_top = 719.0
+offset_right = 582.0
+offset_bottom = 758.0
+scale = Vector2(1.51, 1.51)
+text = "Usa las flechas direccionales para moverte entre los bambúes"
+
+[node name="TextEdit4" type="Label" parent="."]
+layout_mode = 0
+offset_left = 534.0
+offset_top = 818.0
+offset_right = 884.0
+offset_bottom = 857.0
+scale = Vector2(1.51, 1.51)
+text = "Presiona la flecha para arriba para empezar"
+
+[node name="TextEdit2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 147.0
+offset_top = 428.0
+offset_right = 555.0
+offset_bottom = 467.0
+scale = Vector2(1.51, 1.51)
+text = "Y usa la flecha hacia arriba para disparar shurikens"
+
+[node name="TextEdit3" type="Label" parent="."]
+layout_mode = 0
+offset_left = 506.0
+offset_top = 182.0
+offset_right = 936.0
+offset_bottom = 231.0
+scale = Vector2(1.51, 1.51)
+text = "Solo tenes 3 shurikens hasta que puedas agarrar mas
+"
+
+[node name="TextEdit5" type="Label" parent="."]
+layout_mode = 0
+offset_left = 815.0
+offset_top = 500.0
+offset_right = 1283.0
+offset_bottom = 539.0
+scale = Vector2(1.51, 1.51)
+text = "podes comer onigiris para recuperar tu barra de resistencia"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(458.5, 603.75)
+scale = Vector2(2.70313, 2.49219)
+sprite_frames = SubResource("SpriteFrames_heifu")
+autoplay = "default"
+frame_progress = 0.0112994
+
+[node name="Onigiri" type="Sprite2D" parent="."]
+position = Vector2(1083, 428)
+texture = ExtResource("15_h6v0s")
+
+[node name="TextureProgressBar" parent="." instance=ExtResource("16_m1hlb")]
+layout_mode = 1
+offset_left = 737.0
+offset_top = 293.0
+offset_right = 762.0
+offset_bottom = -29.0

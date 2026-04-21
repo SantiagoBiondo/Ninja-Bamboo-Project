@@ -1,0 +1,14 @@
+Label
+LineEdit
+AudioStreamPlayer
+AnimatedSprite2D
+CanvasLayer
+Timer
+Button
+TextEdit
+ColorRect
+Sprite2D
+Marker2D
+TextureProgressBar
+ReferenceRect
+Container

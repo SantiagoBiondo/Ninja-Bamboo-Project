@@ -1,0 +1,46 @@
+[gd_scene load_steps=9 format=3 uid="uid://dn1plsl6u68ub"]
+
+[ext_resource type="PackedScene" uid="uid://plmy8xuu4qge" path="res://scenes/bambu.tscn" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://cqeky5sktsk2o" path="res://scenes/player.tscn" id="2_h2yge"]
+[ext_resource type="PackedScene" uid="uid://cjrqqqbkyal13" path="res://scenes/mob_spawner.tscn" id="3_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://1si1p3w0r8n8" path="res://scenes/mob.tscn" id="4_lquwl"]
+[ext_resource type="PackedScene" uid="uid://c8otdmij1toox" path="res://scenes/ui.tscn" id="5_tbgi4"]
+[ext_resource type="PackedScene" uid="uid://bpaklnh0e7kvc" path="res://scenes/collectible_spawner.tscn" id="6_o6xl0"]
+[ext_resource type="PackedScene" uid="uid://st6fvtewmvsu" path="res://scenes/collectible.tscn" id="7_tipki"]
+[ext_resource type="PackedScene" uid="uid://bycwnercnfr0g" path="res://scenes/background.tscn" id="8_tipki"]
+
+[node name="Main" type="Node2D"]
+
+[node name="bambu" parent="." instance=ExtResource("1_0xm2m")]
+z_index = 1
+
+[node name="Player" parent="." groups=["player"] instance=ExtResource("2_h2yge")]
+z_index = 1
+rotation = 1.5708
+scale = Vector2(0.1, 0.1)
+
+[node name="Mob_Spawner" parent="." instance=ExtResource("3_1bvp3")]
+z_index = 1
+enemy_scene = ExtResource("4_lquwl")
+
+[node name="Mob" parent="Mob_Spawner" instance=ExtResource("4_lquwl")]
+z_index = 1
+
+[node name="UI" parent="." instance=ExtResource("5_tbgi4")]
+z_index = 1
+custom_minimum_size = Vector2(24.915, 8.995)
+offset_left = 6.0
+offset_top = 9.0
+offset_right = 69.0
+offset_bottom = 30.0
+
+[node name="Collectible_Spawner" parent="." instance=ExtResource("6_o6xl0")]
+z_index = 1
+collectible_scene = ExtResource("7_tipki")
+
+[node name="Collectible" parent="Collectible_Spawner" groups=["player"] instance=ExtResource("7_tipki")]
+z_index = 1
+
+[node name="background" parent="." instance=ExtResource("8_tipki")]
+
+[connection signal="body_entered" from="Collectible_Spawner/Collectible" to="Player" method="_on_collectible_body_entered"]

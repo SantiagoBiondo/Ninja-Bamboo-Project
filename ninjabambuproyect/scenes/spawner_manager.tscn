@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=3 uid="uid://dqhjwi35nhqe5"]
+
+[ext_resource type="Script" uid="uid://dj5crnsksdarc" path="res://scripts/Collectibles/spawner_manager.gd" id="1_jhjc3"]
+[ext_resource type="PackedScene" uid="uid://1si1p3w0r8n8" path="res://scenes/mob.tscn" id="2_f8xvu"]
+[ext_resource type="PackedScene" uid="uid://st6fvtewmvsu" path="res://scenes/collectible.tscn" id="3_68bqg"]
+[ext_resource type="PackedScene" uid="uid://cl3m4janwxblo" path="res://scenes/collectible_shuriken.tscn" id="4_ytu8w"]
+
+[node name="spawnerManager" type="Node2D"]
+script = ExtResource("1_jhjc3")
+enemy_scene = ExtResource("2_f8xvu")
+collectible_scene = ExtResource("3_68bqg")
+collectible_shuriken = ExtResource("4_ytu8w")
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

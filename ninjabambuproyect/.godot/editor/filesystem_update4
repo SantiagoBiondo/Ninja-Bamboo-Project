@@ -1,0 +1,3 @@
+res://high_scores.gd
+res://scenes/game_over_screen.tscn
+res://scripts/UI/game_over_screen.gd

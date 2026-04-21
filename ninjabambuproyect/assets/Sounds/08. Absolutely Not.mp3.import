@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d2n8pf0gwga5k"
+path="res://.godot/imported/08. Absolutely Not.mp3-2b9dfe734b1a7066b584e95621220e05.mp3str"
+
+[deps]
+
+source_file="res://assets/Sounds/08. Absolutely Not.mp3"
+dest_files=["res://.godot/imported/08. Absolutely Not.mp3-2b9dfe734b1a7066b584e95621220e05.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

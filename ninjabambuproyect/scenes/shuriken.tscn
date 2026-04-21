@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://dnetxgjftfdt1"]
+
+[ext_resource type="Texture2D" uid="uid://c2mlslfmwq5mi" path="res://assets/ilustracion-pixel-art-shuriken-pixelated-shuriken-shuriken-ninja-icono-pixelado-pixel-art_1038602-355.png" id="1_7ccba"]
+[ext_resource type="Script" uid="uid://pup0xeycvo8t" path="res://scripts/UI/shuriken.gd" id="1_k18gy"]
+
+[node name="shuriken" type="Area2D"]
+scale = Vector2(0.2, 0.2)
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("1_k18gy")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_7ccba")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+visible = false
+polygon = PackedVector2Array(24, -16, 48, -16, 72, -32, 72, -16, 40, 16, 24, 16, 16, 24, 16, 48, 32, 72, 8, 72, -16, 40, -16, 40, -16, 24, -24, 16, -48, 16, -72, 32, -72, 8, -48, -16, -24, -16, -16, -24, -16, -48, -32, -72, -8, -72, 16, -48, 16, -24)
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

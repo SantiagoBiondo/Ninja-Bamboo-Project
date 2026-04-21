@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://bycwnercnfr0g"]
+
+[ext_resource type="Texture2D" uid="uid://b18xsqvk7vsxd" path="res://assets/ChatGPT Image 8 may 2025, 13_13_33.png" id="1_oabld"]
+[ext_resource type="Texture2D" uid="uid://c1y4u88ilwbkr" path="res://assets/ChatGPT Image 8 may 2025, 13_24_09.png" id="2_y0upk"]
+
+[node name="background" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(288, 452)
+scale = Vector2(0.5625, 0.588542)
+texture = ExtResource("1_oabld")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(1440, 450)
+scale = Vector2(0.5625, 0.591146)
+texture = ExtResource("1_oabld")
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+position = Vector2(864, 452)
+scale = Vector2(0.5625, 0.588542)
+texture = ExtResource("1_oabld")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(288, -447.437)
+scale = Vector2(0.5625, 0.584066)
+texture = ExtResource("2_y0upk")
